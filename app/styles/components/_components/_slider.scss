@@ -324,8 +324,8 @@
   font-weight: 800;
   position: absolute;
   background-color: #fff;
-  width: 2.8em;
-  height: 2.8em;
+  width: 1.5em;
+  height: 1.5em;
   left: 50%;
   top: 50%;
   margin-top: -1.4em;
@@ -354,22 +354,23 @@
 /* captions, styled fo the overlay variant */
 .sy-caption-wrap {
   position: absolute;
-  bottom: 2em;
+  bottom: 42%;
   z-index: 12;
   left: 50%;
+  text-align:center
 }
 .sy-caption-wrap .sy-caption {
   position: relative;
   left: -50%;
-  background-color: rgba(0, 0, 0, 0.54);
   color: #fff;
-  padding: 0.4em 1em;
-  -webkit-border-radius: 1.2em;
-  -moz-border-radius: 1.2em;
-  -ms-border-radius: 1.2em;
-  -o-border-radius: 1.2em;
-  border-radius: 1.2em;
+  font-size:2em;
+  text-transform:uppercase;
+  line-height:1em;
+  border-top:1px solid #fff;
+  border-bottom:1px solid #fff;
+  padding:.7em 0;
 }
+
 .sy-caption-wrap .sy-caption a:link, .sy-caption-wrap .sy-caption a:visited {
   color: #e24b70;
   font-weight: 600;
@@ -378,20 +379,11 @@
 .sy-caption-wrap .sy-caption a:hover, .sy-caption-wrap .sy-caption a:focus {
   text-decoration: underline;
 }
+
 @media only screen and (max-device-width: 600px), screen and (max-width: 600px) {
-  .sy-caption-wrap {
-    left: 0;
-    bottom: 0.4em;
-  }
+
   .sy-caption-wrap .sy-caption {
-    left: 0;
-    padding: 0.2em 0.4em;
-    font-size: 0.92em;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    -ms-border-radius: 0;
-    -o-border-radius: 0;
-    border-radius: 0;
+    font-size: 1em;
   }
 }
 
@@ -405,12 +397,15 @@
   padding: 0;
   list-style: none;
   text-align: center;
+  position:absolute;
+  margin-top:-25px;
+  z-index:10;
 }
 .sy-pager li {
   display: inline-block;
-  width: 1.2em;
-  height: 1.2em;
-  margin: 0 1em 0 0;
+  width: 10px;
+  height: 10px;
+  margin: 0 .5em 0 0;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -418,7 +413,7 @@
   border-radius: 50%;
 }
 .sy-pager li.sy-active a {
-  background-color: #e24b70;
+  background-color: #333;
 }
 .sy-pager li a {
   width: 100%;
@@ -453,3 +448,6 @@
   -o-transition: padding 600ms ease;
   transition: padding 600ms ease;
 }
+
+
+
