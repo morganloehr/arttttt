@@ -330,22 +330,7 @@ main {
 }
 
 
-/**
- * slippry v1.2.1 - Simple responsive content slider
- * http://slippry.com
- *
- * Author(s): Lukas Jakob Hafner - @saftsaak
- *            Thomas Hurd - @SeenNotHurd
- *
- * Copyright 2013, booncon oy - http://booncon.com
- *
- * Thanks @ http://bxslider.com for the inspiration!
- *
- * Released under the MIT license - http://opensource.org/licenses/MIT
- */
-/* -------------------------- MIXINS ---------------------------------- */
-/* -------------------------- END MIXINS ---------------------------------- */
-/* kenBurns animations, very basic */
+
 @-webkit-keyframes left-right {
   0% {
     -webkit-transform: translateY(-20%) translateX(-10%);
@@ -682,7 +667,8 @@ main {
   transition: padding 600ms ease;
 }
 
-/*.FlexEmbed {
+
+.FlexEmbed {
   display: block;
   overflow: hidden;
   position: relative;
@@ -719,5 +705,5 @@ main {
   max-height: 300px;
   max-width: 1000px;
 }
-*/
+
 
